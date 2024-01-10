@@ -1,0 +1,149 @@
+html, body, #body, #info {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	height: 100%;
+}
+body {
+	overflow-x: hidden;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica;
+  background: url(texture-noise.png);
+  margin-right: 6px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    
+}
+ 
+::-webkit-scrollbar-track {
+   background: url(texture-noise.png);
+    border-radius: 0px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 4px #222; 
+}
+#info { 
+  position: fixed; 
+  background: url(texture-noise_2.png);
+  width: 25%;
+  height: 100%; 
+  font-size: 18px;
+  left: 0;
+  box-shadow: 3px 1px 2px 1px #888888;
+}
+
+#body {
+	float:right;
+	width: 75%;
+}
+
+#wresim{
+	text-align: center;
+	min-height: 280px;
+}
+
+#resim1{
+	display: inline-block;
+	background-color: white;
+	padding: 3px;
+	margin-top: 3px;
+	text-align: center;
+	box-shadow: 5px 5px 2px 1px #888888;
+}
+#resim{
+	border:2px solid;
+	border-color: gray;
+	background-color: white;
+	display: inline-block;
+	padding: 2px;
+    vertical-align: middle;
+}
+
+#iresim{
+	max-width: 100%;
+	max-height: 250px;
+	vertical-align: middle;
+	margin: auto;
+}
+
+
+td.label {
+  font-weight: bolder;
+  text-align: right;
+  width: 82px
+}
+table { 
+	margin:auto; 
+	margin-top: 15px;}
+
+
+rect {
+  fill: none;
+  pointer-events: all;
+}
+
+pre {
+  font-size: 18px;
+}
+
+line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.string, .regexp {
+  color: #f39;
+}
+
+.keyword {
+  color: #00c;
+}
+
+.comment {
+  color: #777;
+  font-style: oblique;
+}
+
+.number {
+  color: #369;
+}
+
+.class, .special {
+  color: #1181B8;
+}
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #666;
+}
+
+.hint {
+  position: absolute;
+  right: 0;
+  width: 1280px;
+  font-size: 12px;
+  color: #999;
+}
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 11px;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}

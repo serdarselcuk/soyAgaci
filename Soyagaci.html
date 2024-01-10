@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <link type="text/css" rel="stylesheet" href="js/style.css" />
+  <script src="js/d3.v3.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/aile.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+  <div>
+  <form enctype="multipart/form-data">
+    <input id="upload" type=file name="files[]">
+  </form>
+  <button id="parse">GOSTER</button>
+</div>
+  <div id="info">
+    <div id="wresim">
+      <span id="resim1">
+        <span id="resim">
+          <img src="js/erkek.png" id="iresim" />
+        </span>
+      </span>
+    </div>
+
+    <table border="0" cellspacing="5" cellpadding="5" style="width: 100%">
+      <tr>
+        <td class="label">Adi :</td>
+        <td id='isim'></td>
+      </tr>
+      <tr>
+        <td class="label">Babasi :</td>
+        <td id='baba'></td>
+      </tr>
+      <tr>
+        <td class="label">Annesi :</td>
+        <td id='anne'></td>
+      </tr>
+      <tr>
+        <td class="label">Dogum :</td>
+        <td id='dogum'></td>
+      </tr>
+      <tr>
+        <td class="label">Vefati :</td>
+        <td id='vefat'></td>
+      </tr>
+      <tr>
+        <td class="label">Esi :</td>
+        <td id='es'></td>
+      </tr>
+      <tr>
+        <td class="label">K.Peder :</td>
+        <td id='kpeder'></td>
+      </tr>
+      <tr>
+        <td class="label">Tel :</td>
+        <td id='tel'></td>
+      </tr>
+      <tr>
+        <td class="label">Email :</td>
+        <td id='email'></td>
+      </tr>
+    </table>
+  </div>
+  <div id="body">
+  </div>
+  <!-- <script src="js/readExcel.js" type="text/javascript" charset="utf-8"> </script> -->
+  <script src="js/yukle.js" type="text/javascript" charset="utf-8"> </script>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+  <!-- <script>
+    var ExcelToJSON = function () {
+
+      this.parseExcel = function (file) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          var data = e.target.result;
+          var workbook = XLSX.read(data, {
+            type: 'binary'
+          });
+          workbook.SheetNames.forEach(function (sheetName) {
+            // Here is your object
+            var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+            var json_object = JSON.stringify(XL_row_object);
+            // console.log(JSON.parse(json_object));
+            // jQuery('#xlx_json').val(json_object);
+          })
+        };
+
+        reader.onerror = function (ex) {
+          console.log(ex);
+        };
+
+        reader.readAsBinaryString(file);
+      };
+    };
+
+    function handleFileSelect(evt) {
+
+      var files = evt.target.files; // FileList object
+      var xl2json = new ExcelToJSON();
+      xl2json.parseExcel(files[0]);
+    }
+  </script> -->
+  <!-- <script>
+    document.getElementById('upload').addEventListener('change', handleFileSelect, false);
+  </script> -->
+</body>
+
+</html>
